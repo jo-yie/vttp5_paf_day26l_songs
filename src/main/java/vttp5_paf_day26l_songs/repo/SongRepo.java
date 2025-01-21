@@ -44,7 +44,7 @@ public class SongRepo {
         Query query = Query.query(criteria);
 
         query.fields()
-            .include("track_name", "artist(s)_name")
+            .include(F_TRACK_NAME, F_ARTIST_NAME)
             .exclude("_id");
 
         return template.find(query, Document.class, C_SONGS);

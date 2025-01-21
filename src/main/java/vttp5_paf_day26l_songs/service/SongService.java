@@ -1,5 +1,7 @@
 package vttp5_paf_day26l_songs.service;
 
+import static vttp5_paf_day26l_songs.repo.Constants.*;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -35,8 +37,8 @@ public class SongService {
 
             SongObject so = new SongObject(); 
 
-            String trackName = d.get("track_name").toString();
-            String artistName = d.get("artist(s)_name").toString();
+            String trackName = d.get(F_TRACK_NAME).toString();
+            String artistName = d.get(F_ARTIST_NAME).toString();
 
             so.setTrackName(trackName);
             so.setArtistName(artistName);

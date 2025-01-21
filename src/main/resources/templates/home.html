@@ -11,6 +11,7 @@
 
     <form method="GET" 
         th:action="@{/songs}">
+
         <select name="year">
             <!-- <option value="0">Select Option</option> -->
             <option th:each="year:${years}" 
@@ -23,7 +24,5 @@
 
     </form>
 
-
-    
 </body>
 </html>
